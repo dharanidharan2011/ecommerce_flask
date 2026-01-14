@@ -1,0 +1,40 @@
+/workspace
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── admin
+│   │   ├── __init__.py
+│   │   ├── forms.py
+│   │   └── routes.py
+│   ├── api
+│   │   ├── __init__.py
+│   │   └── routes.py
+│   ├── auth
+│   │   ├── __init__.py
+│   │   ├── forms.py
+│   │   └── routes.py
+│   ├── cart
+│   │   ├── __init__.py
+│   │   ├── forms.py
+│   │   └── routes.py
+│   ├── main
+│   │   ├── __init__.py
+│   │   └── routes.py
+│   ├── models.py
+│   ├── seeds.py
+│   └── templates
+│       ├── admin
+│       ├── auth
+│       ├── base.html
+│       ├── cart.html
+│       ├── checkout.html
+│       ├── index.html
+│       ├── order_confirmation.html
+│       ├── product.html
+│       └── search.html
+├── config.py
+├── requirements.txt
+├── run.py
+└── todo.md
+
+10 directories, 28 files

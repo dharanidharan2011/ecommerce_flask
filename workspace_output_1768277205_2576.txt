@@ -1,0 +1,22 @@
+bash: line 3: ecommerce_db: command not found
+WARNING: The candidate selected for download or install is a yanked version: 'stripe' candidate (version 7.8.0 at https://files.pythonhosted.org/packages/9f/0a/f47c33e690008c4619e34578805b30768ca6bdb6acc7b764fe448b478385/stripe-7.8.0-py2.py3-none-any.whl (from https://pypi.org/simple/stripe/) (requires-python:>=3.6))
+Reason for being yanked: <none given>
+WARNING: The candidate selected for download or install is a yanked version: 'email-validator' candidate (version 2.1.0 at https://files.pythonhosted.org/packages/90/41/4767ff64e422734487a06384a66e62615b1f5cf9cf3b23295e22d3ecf711/email_validator-2.1.0-py3-none-any.whl (from https://pypi.org/simple/email-validator/) (requires-python:>=3.7))
+Reason for being yanked: Forgot to drop Python 3.7 from python_requires, see https://github.com/JoshData/python-email-validator/pull/118
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Traceback (most recent call last):
+  File "/workspace/run.py", line 3, in <module>
+    app = create_app()
+          ^^^^^^^^^^^^
+  File "/workspace/app/__init__.py", line 23, in create_app
+    from app.auth import bp as auth_bp
+  File "/workspace/app/auth/__init__.py", line 5, in <module>
+    from app.auth import routes
+  File "/workspace/app/auth/routes.py", line 5, in <module>
+    from app.auth.forms import LoginForm, RegistrationForm
+  File "/workspace/app/auth/forms.py", line 1, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
